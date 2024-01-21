@@ -1,0 +1,70 @@
+/*print a number*/
+Ans:-
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        int no=1;
+        do{
+        System.out.print(no);
+        no++;
+          } while(no<4);
+   }
+}
+
+/*Accept a number from user and do the sum till user enter 0  */
+Ans:-
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        int no=1,sum=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        do{
+            no=sc.nextInt();
+            sum=sum+no;
+          } while(no!=0);
+          System.out.print(sum);
+   }
+}
+
+
+
+/*switch case give choice to user A for addition s for sustraction*/
+Ans:-
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {    String c;
+        int a=0,b=0;
+        System.out.print("Enter choice a:addition\ns:substraction\n");
+        Scanner sc=new Scanner(System.in);
+        c=sc.next();
+        if("A".equals(c)||"a".equals(c)||"S".equals(c)||"s".equals(c))
+        {
+            System.out.print("Enter to numbers");
+            a=sc.nextInt();
+            b=sc.nextInt();
+        }
+        switch(c)
+        {
+            default:
+            System.out.print("Enter valid case ");
+            case "a":
+            case "A":
+                  System.out.print(a+b);
+                   break;
+            case "s":
+            case "S":
+                  System.out.print(a-b);
+                      break;
+        }  
+   }
+}
+
+/**/
+Ans:-

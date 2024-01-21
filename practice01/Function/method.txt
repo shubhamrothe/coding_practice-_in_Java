@@ -1,0 +1,297 @@
+(Que 1) Do the sum of two no using method.
+//Function without return type
+Ans:-1
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the two numbers");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        calsum(n1,n2);
+    }
+    public static void calsum(int x,int y)
+    {
+        int d;
+        d=x+y;
+        out.println("sum"+d);
+    }
+}
+
+//Function returning value
+Ans:-2
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the two numbers");
+        int n1=sc.nextInt();
+        int n2=sc.nextInt();
+        int r=calsum(n1,n2);
+        out.println(r);
+       // out.print(calsum(n1,n2));
+    }
+    public static int calsum(int x,int y)
+    {
+        int d;
+        d=x+y;
+        //out.println("sum"+d);
+        return d;
+    }
+}
+
+
+(Que 2) Accept a number and print square of that number.
+case:1 Return type int input int
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int n=sc.nextInt();
+        int r=calsquare(n);
+        out.println("Square of a number="+r);
+        //out.print(calsquare(n));
+    }
+    public static int calsquare(int x)
+    {
+        int d;
+        d=x*x;
+        return d;
+    }
+}
+
+case:2 Return type float input int
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+  public static void main(String args[])
+   {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int n=sc.nextInt();
+        float r=calsquare(n);
+        out.println("Square of a number="+r);
+
+    }
+    public static float calsquare(int x)
+    {
+        float d;
+        d=x*x;
+        return d;
+    }
+}
+
+case:3 Return type int input float
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        float n=sc.nextFloat();
+        int r=calsquare(n);
+        out.println("Square of a number="+r);
+        //out.print(calsquare(n));
+    }
+    public static int calsquare(float x)
+    {
+        int d;
+        d=(int)(x*x);
+        return d;
+    }
+}
+
+case:4 Return type float input float
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        float n=sc.nextFloat();
+        float r=calsquare(n);
+        out.println("Square of a number="+r);
+        //out.print(calsquare(n));
+    }
+    public static float calsquare(float x)
+    {
+        float d;
+        d=(x*x);
+        return d;
+    }
+}
+
+
+(Que 3) Accept a number from user and find cube of no using method.
+Ans:-1
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int n=sc.nextInt();
+        calcube(n);
+    }
+    public static void calcube(int x)
+    {
+        int cube;
+        cube=x*x*x;
+        out.print(cube);
+    }
+} 
+
+Ans:2-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int n=sc.nextInt();
+        int r=calcube(n);
+        out.println("cube of a number="+r);
+        //out.print(calsquare(n);
+    }
+    public static int calcube(int x)
+    {
+        int d;
+        d=x*x*x;
+        return d;
+    }
+}
+
+(Que 4) Accept 10 numbers from user and do sum of it.
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static int SumOfNumbers()
+    {   
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter 10 numbers");
+        int sum=0;
+        for(int i=1;i<=10;i++)
+        {
+            int n=sc.nextInt();
+            sum=sum+n;
+        }
+        return sum;
+    }
+    public static void main (String[] args)
+    {
+        int d=SumOfNumbers();
+        out.print("Sum of 10 numbers="+d);
+    }
+}
+
+(Que 5) Accept a number from user and check it is palondrome or not.
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+class Test
+{
+    public static void main (String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter a number");
+        int n=sc.nextInt();
+        boolean r=Palindrome(n);
+        if(r==true)
+        out.print("Enter number is palindrome");
+        out.print("Enter number is not palindrome");
+    }
+    public static boolean Palindrome(int no)
+    {   
+        int n,rem,rev=0;
+        n=no;
+        while(no!=0)   //It is impure method and if you want pure method then modify n not no in while loop. 
+        {
+            rem=no%10;
+            rev=rev*10+rem;
+            no=no/10;
+        }
+        if(rev==n)
+        return true;
+        else
+        return false;
+    } 
+}
+
+(Que 6) Accept a number from user and check it is special or not.
+
+
+
+
+
+
+
+
+(Que 7) print fibonacci series
+
+
+
+
+
+
+
+
+
+(que 8) Accept a number and digit from user check occurance of that digit
+Ans:-
+import static java.lang.System.out;
+import java.util.*;
+public class Test
+{
+    public static void main(String[] args)
+    {
+        Scanner sc= new Scanner(System.in);
+        out.print("Enter a number and a digit");
+        int no=sc.nextInt();
+        int d=sc.nextInt();
+        int s=occurance(no,d);
+        if(s!=0)
+        out.print("Entered digit is occured");
+        else
+        out.print("Entered digit is not occured");
+
+    }
+    public static int occurance(int no, int d)
+    {
+        int rem,c=0;
+        while(no!=0)
+        {
+           rem=no%10;
+           if(rem==d)
+           c++;
+           no=no/10;
+        }
+        return c;
+    }
+
+}
+Ans:-
