@@ -20,7 +20,7 @@ public class Day3_11
 
         //}
     } 
-    static boolean CheckTwinPrimeNumber(int n1,int n2)
+     static boolean CheckTwinPrimeNumber(int n1,int n2)
     {
         if(CheckPrimeNumber(n1) && CheckPrimeNumber(n2) && Math.abs(n1-n2)==2)
         return true;

@@ -6,7 +6,8 @@ public class Myclass
 {
     public static void main(String[] args)
     {
-        Scanner sc=new Scanner(System.in);
+        Scanner sc=new Sc
+anner(System.in);
         int[] arr;
         out.print("Enter the size of array");
         int size=sc.nextInt();

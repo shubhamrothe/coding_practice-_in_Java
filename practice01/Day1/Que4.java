@@ -1,4 +1,4 @@
-/*Q4.	Accept a character from user and reverse the case eg. Input a out put   A*/
+/*Q4.	Accept a character from user and reverse the case eg. Input a  output A*/
 import static java.lang.System.out;
 import java.util.*;
 public class Que4

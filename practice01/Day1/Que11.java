@@ -17,6 +17,7 @@ public class Que11
         r3=no%10;
         no=no/10;
         out.println("Sum="+(r1+r2+r3));
+        
         //using loop
        /*
        int sum=0;

@@ -20,10 +20,8 @@ public static void main(String[] args) {
 				j--;
 				l--;
             }
-		}
-		
+		}	
 	}
-
      for(int n=0;n<l;n++)
 	    out.print(arr[n]);
     }

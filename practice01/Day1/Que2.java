@@ -13,19 +13,24 @@ public class Que2
         b=sc.nextInt();
         c=sc.nextInt();
         sc.close();
-        if(a>b)
-        {
-            if(a>c)
-            out.println("Highest no"+a);
-            else
-            out.println("Highest no"+c);
-        }
-        else
-        {
-            if(b>c)
-            out.println("Highest no"+b);
-            else
-            out.println("Highest no"+c);
-        }
+        // if(a>b)
+        // {
+        //     if(a>c)
+        //     out.println("Highest no"+a);
+        //     else
+        //     out.println("Highest no"+c);
+        // }
+        // else
+        // {
+        //     if(b>c)
+        //     out.println("Highest no"+b);
+        //     else
+        //     out.println("Highest no"+c);
+        // }
+
+
+        int x= (a>b)?((a>c)?a:c):((b>c)?b:c);
+        System.out.println(x);
+
     }  
 }

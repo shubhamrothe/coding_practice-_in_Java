@@ -10,11 +10,11 @@ public class Que10
         sc.close();
         double tax,netsalary;
         if(salary>8000&&(ch=='m'||ch=='M'))
-              tax=0.05; 
+                tax=0.05; 
         else if(salary<8000&&(ch=='m'||ch=='M'))
                 tax=.02;
         else if(salary>5000&&(ch=='f'||ch=='F'))
-            tax=.03;
+                tax=.03;
         else
                 tax=.01;
          netsalary=salary-salary*tax;

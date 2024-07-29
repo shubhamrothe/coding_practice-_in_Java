@@ -1,3 +1,5 @@
+//write a program to print sum of digits of a number
+
 import static java.lang.System.out;
 import java.util.*;
 public class Day2_4 
